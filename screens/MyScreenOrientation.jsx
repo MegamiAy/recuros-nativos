@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         // alignItems: 'center',
-        justifyContent: 'center',
+        // justifyContent: 'center',
     },
     title: {
         fontSize: 35,
@@ -58,7 +58,7 @@ async function CabCima() {
     )
 }
 
-export default function MyScreenOrientation() {
+export default function MyScreenOrientation({navigation}) {
     const [ info, setInfo ] = useState('');
 
     function Informar(){
@@ -76,8 +76,6 @@ export default function MyScreenOrientation() {
             <Button onPress={CabBaixo} title="Cabeça pra baixo" />
             <Button onPress={CabCima} title="Cabeça pra cima" />
             <Button onPress={Informar} title="Informação" />
-            {/* <Text>{info}</Text> */}
-            <Footer />
         </View>
     )
 }

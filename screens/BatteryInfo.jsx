@@ -8,13 +8,13 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
+    //   alignItems: 'center',
+    //   justifyContent: 'center',
     },
     title: {
         fontSize: 35,
         backgroundColor: '#949',
-        // fontWeight: 'bold',
+        fontWeight: 'bold',
         color: '#fff',
         marginBottom: 10,
         padding: 10,
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     }
   });
 
-export default function BatteryInfo() {
+export default function BatteryInfo({ navigation }) {
     const [nivelBateria, setNivelBateria] = useState();
     async function atualizarTudo() {
         Bateria()
