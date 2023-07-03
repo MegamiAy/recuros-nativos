@@ -1,5 +1,4 @@
 import { StyleSheet, Text, View } from "react-native";
-import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { Button } from "react-native";
 import * as ScreenOrientation from 'expo-screen-orientation';
@@ -8,27 +7,8 @@ import { useState } from "react";
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
-        // alignItems: 'center',
-        // justifyContent: 'center',
+        backgroundColor: "#c4beca",
     },
-    title: {
-        fontSize: 35,
-        backgroundColor: '#939',
-        // fontWeight: 'bold',
-        color: '#fff',
-        marginBottom: 10,
-        padding: 10,
-    },
-
-    info: {
-
-        padding: 10,
-    },
-
-    head: {
-        marginTop: 0
-    }
 
 });
 
@@ -58,10 +38,10 @@ async function CabCima() {
     )
 }
 
-export default function MyScreenOrientation({navigation}) {
-    const [ info, setInfo ] = useState('');
+export default function MyScreenOrientation({ navigation }) {
+    const [info, setInfo] = useState('');
 
-    function Informar(){
+    function Informar() {
         setInfo(ScreenOrientation.getOrientationAsync)
     }
 

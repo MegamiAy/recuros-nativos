@@ -1,13 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
 import * as Device from 'expo-device';
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
+      backgroundColor: "#c4beca",
     },
     title: {
         fontSize: 35,
@@ -31,8 +30,8 @@ const styles = StyleSheet.create({
 
 export default function DeviceInfoScreen(){
     return(
-        <View>
-            <Text style={styles.title}>INFORMAÇÕES DO APARELHO</Text>
+        <View style={styles.container}>
+            <Header title="INFORMAÇÕES SOBRE O DISPOSITIVO"/> 
             <Text style={styles.info}>
                 O nome do dispositivo: {Device.deviceName}
             </Text>
@@ -48,7 +47,6 @@ export default function DeviceInfoScreen(){
             <Text style={styles.info}>
                 A memória total do dispositivo: {Device.totalMemory}
             </Text>
-            <Footer/>
         </View>
     )
 }
