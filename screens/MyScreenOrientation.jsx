@@ -40,9 +40,9 @@ export default function MyScreenOrientation({ navigation }) {
         setCor('red')
     }
 
-    function Informar() {
-        setInfo(ScreenOrientation.getOrientationAsync)
-    }
+    // function Informar() {
+    //     setInfo(ScreenOrientation.getOrientationAsync)
+    // }
 
     return (
         <View style={{
@@ -57,7 +57,7 @@ export default function MyScreenOrientation({ navigation }) {
             <Button onPress={LadoE} title="Esquerda" />
             <Button onPress={CabBaixo} title="Cabeça pra baixo" />
             <Button onPress={CabCima} title="Cabeça pra cima" />
-            <Button onPress={Informar} title="Informação" />
+            {/* <Button onPress={Informar} title="Informação" /> */}
         </View>
     )
 }
