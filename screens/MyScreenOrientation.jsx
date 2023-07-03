@@ -13,7 +13,7 @@ export default function MyScreenOrientation({ navigation }) {
         await ScreenOrientation.lockAsync(
             ScreenOrientation.OrientationLock.DEFAULT
         )
-        setCor('red')
+        setCor('#c4beca')
     }
     async function LadoD() {
         await ScreenOrientation.lockAsync(

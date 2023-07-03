@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Button } from "react-native";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
+import * as Battery from 'expo-battery';
 
 const styles = StyleSheet.create({
     container: {

@@ -74,9 +74,9 @@ export default function Notify({ navigation }) {
         console.log(ultimaNotificacao)
     }
 
-    useEffect(() => {
-        exibirAlerta()
-    }, [ultimaNotificacao])
+    // useEffect(() => {
+    //     exibirAlerta()
+    // }, [ultimaNotificacao])
 
     async function lerNotify() {
         alert(ultimaNotificacao.notification.request.content.body)

@@ -1,6 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
 import * as Device from 'expo-device';
-import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 const styles = StyleSheet.create({
