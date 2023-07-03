@@ -19,7 +19,7 @@ export default function Header({ title }) {
     return (
         <View style={{
             paddingTop: 30,
-            backgroundColor: nivelBateria <= 100 && nivelBateria >= 80 ? '#650193' : nivelBateria <= 79 && nivelBateria >= 50 ? 'yellow' : nivelBateria <= 49 && nivelBateria >= 30 ? 'orange' : 'red',
+            backgroundColor: nivelBateria <= 100 && nivelBateria >= 60 ? '#650193' : nivelBateria <= 59 && nivelBateria >= 30 ? 'yellow' : nivelBateria <= 29 && nivelBateria >= 5 ? 'orange' : 'red',
             paddingBottom: 5,
             paddingHorizontal: 5,
             marginBottom: 10,
