@@ -8,8 +8,6 @@ import Notify from "./Notify";
 import ContactsInfo from "./ContactsInfo";
 import Pag from "./pag";
 import New from "./New";
-// import New from "./new";
-
 
 const Stack = createMaterialBottomTabNavigator();
 
