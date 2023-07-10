@@ -4,28 +4,6 @@ import * as Notifications from 'expo-notifications';
 import Header from '../components/Header';
 
 export default function New({ navigation }) {
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#c4beca',
-    },
-    title: {
-      fontSize: 35,
-      backgroundColor: '#949',
-      fontWeight: 'bold',
-      color: '#fff',
-      marginBottom: 10,
-      padding: 10,
-      textAlign: 'center',
-    },
-    info: {
-      fontSize: 14,
-      backgroundColor: '#5e4d85',
-      color: '#fff',
-      marginBottom: 10,
-      padding: 10,
-    },
-  });
 
   const [expoToken, setExpoToken] = useState('');
   const [notificationColor, setNotificationColor] = useState('#ff0000');
